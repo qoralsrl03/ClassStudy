@@ -47,13 +47,27 @@ public class RockScissorsPaper {
 		}
 		return n;
 	}
-
-	public static void main(String[] args) {
-		int com=0; 
+   public static void Stop() {
+	   int com=0; 
 		int my=0;
+		int stop =0;
+		String continues = "";
+		Scanner scan = new Scanner(System.in);
+	   while(true) {
+			my = Scan();
+			com = RSP();
+			RSPvsSCAN(my, com);
+			System.out.println("계속하시려면 Y/아니면 N");
+			continues = scan.next();
+			if("N".equals(continues)) {
+				break;
+			}
+			else {continue;}
+	   }
+   }
+	public static void main(String[] args) {
 		System.out.println("가위바위보의 세계에 오신것을 환영합니다.");
-		my = Scan();
-		com = RSP();
-		RSPvsSCAN(my, com);
+		Stop();
 	}
 }
+
