@@ -1,5 +1,5 @@
 --1일차 주석
-/*mysql은 써봤지만 oracle은 어떻게 쓰는지 모르곘다*/
+/*mysql*/
 -- 테이블 스페이스 생성 --
 create tablespace myts
 datafile '/u01/app/oracle/oradata/XE/myts.dbf'
