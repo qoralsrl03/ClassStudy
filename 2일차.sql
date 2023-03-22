@@ -33,7 +33,6 @@ and salary >= 9000
 and a.department_id = b.department_id
 order by salary desc;
 
-
 --insert into ~ values(~)
 insert into ex2_1 values(1, '팽수'); --전체입력
 insert into ex2_1(emp_id) values(2); --부분입력
